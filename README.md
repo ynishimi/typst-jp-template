@@ -9,7 +9,7 @@ Typstで、とりあえず日本語で書き始めるためのテンプレート
 同じフォルダに`template.typ`をおいて、次のように書いていく。
 
 ```typst
-#import "template.typ": *
+#import "lib/template.typ": *
 #show: jarticle
 
 こんにちは、世界。

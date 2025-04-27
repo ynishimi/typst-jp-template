@@ -1,5 +1,5 @@
 // 今のところjarticleとappendixを定義している。
-#import "template.typ": *
+#import "lib/template.typ": *
 // expvalというコマンドを使うため。
 #import "@preview/physica:0.9.4": expval
 
