@@ -8,7 +8,7 @@
   fontsize: 11pt,
   title: [格子ゲージ理論の面積則の演習問題],
   authors: ([山口 哲（大阪大学）],),
-  date: datetime.today().display(年月日),
+  date: datetime(year: 2025, month: 4, day: 27),
   abstract: [
     ここでは、簡単な格子ゲージ理論で強結合展開を考え、Wilsonループが面積則を示すことを見ることを確かめる。このことから、格子ゲージ理論では強結合で閉じ込め相にあることが分かる。]
 )

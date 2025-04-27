@@ -1,9 +1,16 @@
+#let 年月日 = "[year]年[month repr:numerical padding:none]月[day padding:none]日"
+#let 年月 = "[year]年[month repr:numerical padding:none]月"
+#let appendix(app) = [
+    #counter(heading).update(0)
+    #set heading(numbering: "A.1     ")
+    #app
+]
 #let jarticle(
   fontsize: 11pt,
   title: none,
   authors: (),
   abstract: [],
-  date: none,
+  date: datetime.today(),
   doc,
 ) = {
   let roman = "Libertinus Serif"
@@ -83,7 +90,7 @@
 
     par(for a in authors {a})
 
-    par(date)
+    par(date.display(年月日))
 
     if abstract != [] {
       block(width:90%,text(0.9*fontsize,[
@@ -94,13 +101,3 @@
   }
   doc
 }
-
-#let appendix(app) = [
-    #counter(heading).update(0)
-    #set heading(numbering: "A.1     ")
-    #app
-]
-
-#let 年月日 = "[year]年[month repr:numerical padding:none]月[day padding:none]日"
-
-#let 年月 = "[year]年[month repr:numerical padding:none]月"
