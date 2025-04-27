@@ -7,11 +7,12 @@
   doc,
 ) = {
   let roman = "Libertinus Serif"
-  let mincho = "Harano Aji Mincho"
-  let kakugothic = "Harano Aji Gothic"
+  let mincho = "Hiragino Mincho ProN"
+  let kakugothic = "Hiragino Kaku Gothic ProN"
   let math_font = "New Computer Modern Math"
 
-  set text(lang:"ja", font: (roman,mincho), fontsize)
+  // set text(lang:"ja", font: (roman,mincho), fontsize)
+  set text(lang:"ja", font: (mincho), fontsize)
 
   // Use A4 paper
   set page(
