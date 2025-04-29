@@ -25,6 +25,7 @@
   set page(
     paper: "a4",
     margin: auto,
+    numbering: "1"
   )
   set par(justify: true)
 
